@@ -1,0 +1,16 @@
+// Font 
+
+$font-roboto:'Roboto', sans-serif;
+$font-shrikhand:'Shrikhand', cursive;
+
+.title {
+    font-family: $font-roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.functioning-text {
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 500;
+}

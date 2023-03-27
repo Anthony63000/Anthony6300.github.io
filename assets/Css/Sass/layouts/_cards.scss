@@ -1,0 +1,61 @@
+// Carte fonctionnement 
+
+.functioning-cards {
+    height: 72.38px;
+    border-radius: 20px;
+    background-color: $primary-background;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 20px 0 32.51px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+    &:hover {
+        background-color: $color-primary-light;
+        color: $color-primary;
+    }
+    .cards-number {
+        height: 24px;
+        width: 24px;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        transform: translateX(-304px);
+    }
+    .functioning-icon:hover {
+        color: $color-primary;
+    }
+    .functioning-icon-1 {
+        margin-right: 27px;
+    }
+    .functioning-icon-2 {
+        margin-right: 23px;
+    }
+    .functioning-icon-3 {
+        margin-right: 20px;
+    }
+    .functioning-text {
+        margin-right: 38px;
+        width: 65.52%;
+    }
+}
+
+// cards restaurants 
+
+.restaurant-cards {
+    height: 251px;
+    border-radius: 15px;
+    & img {
+        height: 69.32%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    .restaurant-card-content {
+        height: 30.68%;
+        border-radius: 0 0 15px 15px;
+    }
+}

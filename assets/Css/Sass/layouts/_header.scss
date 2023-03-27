@@ -1,0 +1,11 @@
+.header-container {
+    height: 63px;
+    background-color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));;
+    .header-logo {
+        height: 44px;
+        width: 42.66%;
+        margin: 14px 108px 5px 105px;
+        object-fit: contain;
+    }
+}
