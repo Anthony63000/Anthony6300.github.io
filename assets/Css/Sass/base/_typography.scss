@@ -13,4 +13,40 @@ $font-shrikhand:'Shrikhand', cursive;
     font-family: $font-roboto;
     font-size: 16px;
     font-weight: 500;
+    &--number {
+        color: white;
+        font-size: 14px;
+    }
 }
+
+.restaurant-content-title {
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.restaurant-card-text {
+    font-family: $font-roboto;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.footer-title {
+    font-family: $font-shrikhand;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-text {
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    &--large {
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+

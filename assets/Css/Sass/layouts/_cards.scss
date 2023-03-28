@@ -9,24 +9,19 @@
     justify-content: flex-end;
     margin: 0 20px 0 32.51px;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
-    &:hover {
+    &--primary {
         background-color: $color-primary-light;
-        color: $color-primary;
     }
     .cards-number {
         height: 24px;
         width: 24px;
         background-color: $color-primary;
-        color: white;
         border-radius: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
         transform: translateX(-304px);
-    }
-    .functioning-icon:hover {
-        color: $color-primary;
     }
     .functioning-icon-1 {
         margin-right: 27px;
@@ -36,8 +31,9 @@
     }
     .functioning-icon-3 {
         margin-right: 20px;
+        color: $color-primary;
     }
-    .functioning-text {
+    .functioning-text-content {
         margin-right: 38px;
         width: 65.52%;
     }
@@ -46,16 +42,27 @@
 // cards restaurants 
 
 .restaurant-cards {
-    height: 251px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.10);
     border-radius: 15px;
     & img {
-        height: 69.32%;
+        height: 174px;
         width: 100%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
     .restaurant-card-content {
-        height: 30.68%;
+        height: 77px;
         border-radius: 0 0 15px 15px;
+        padding: 16px 0 12px 12.81px;
+        .restaurant-content-title {
+            margin-bottom: 5px;
+        }
+        & i {
+            position: absolute;
+            transform: translate(275.88px, -33px);
+        }
     }
+    
 }

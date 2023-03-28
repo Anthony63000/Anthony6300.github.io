@@ -1,0 +1,28 @@
+// Footer
+
+.footer-container {
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 0 33px 25px;
+    .footer-title {
+        margin-bottom: 18px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    .footer-content-span {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    & span {
+        color: white;
+    }
+    .footer-text--large {
+        position: absolute;
+        left: 47px;
+    }
+}
