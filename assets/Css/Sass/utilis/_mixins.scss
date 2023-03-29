@@ -1,0 +1,21 @@
+// Responsive design 
+
+
+@mixin medium {
+    @media (min-width: $breakpoint-small) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: $breakpoint-medium) {
+        @content;
+    }
+}
+
+@mixin medium-up {
+    @media (min-width: $breakpoint-large) {
+        @content;
+    }
+}
+

@@ -7,6 +7,18 @@ $font-shrikhand:'Shrikhand', cursive;
     font-family: $font-roboto;
     font-size: 24px;
     font-weight: 700;
+    
+    @include large {
+        &-desktop {
+            font-size: 40px;
+        }
+    }
+}
+
+.discovery-text {
+    font-family: $font-roboto;
+        font-size: 18px;
+        font-weight: 300;
 }
 
 .functioning-text {
@@ -29,6 +41,13 @@ $font-shrikhand:'Shrikhand', cursive;
     font-family: $font-roboto;
     font-size: 17px;
     font-weight: 300;
+}
+
+.restaurant-new-text {
+    font-family: $font-roboto;
+    font-weight: 500;
+    font-size: 14px;
+    color: $new-text;
 }
 
 .footer-title {

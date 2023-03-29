@@ -7,4 +7,12 @@
 .main-container {
     width: 100%;
     max-width: 375px;
+
+    @include medium {
+        max-width: 768px;
+    }
+
+    @include large {
+        max-width: 2000px;
+    }
 }
