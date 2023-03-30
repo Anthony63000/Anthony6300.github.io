@@ -1,10 +1,12 @@
 // Footer
 
+
 .footer-container {
     background-color: $footer-color;
     display: flex;
     flex-direction: column;
     padding: 22px 0 33px 25px;
+    //margin-top: 1063px;
 
     @include large {
         height: 114px;

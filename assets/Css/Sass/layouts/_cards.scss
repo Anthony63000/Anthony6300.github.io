@@ -103,5 +103,29 @@
             top: 23px;
         }
     }
-    
+}
+
+// carte menu 
+
+.menu-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-radius: 15px;
+    background: white;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    gap: 5px;
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &-right {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 1.5px;
+    }
+
 }
