@@ -69,3 +69,35 @@ $font-shrikhand:'Shrikhand', cursive;
     }
 }
 
+.menu-restaurant-title {
+    font-family: $font-shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.menu-items-title {
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.menu-cards {
+
+    font-family: $font-roboto;
+
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-descrition {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    &-price {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

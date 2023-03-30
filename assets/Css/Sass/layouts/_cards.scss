@@ -72,6 +72,7 @@
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
+
     .restaurant-new {
         width: 80px;
         height: 29px;
@@ -91,9 +92,11 @@
         position: relative;
         border-radius: 0 0 15px 15px;
         padding: 16px 0 12px 12.81px;
+
         .restaurant-content-title {
             margin-bottom: 5px;
         }
+        
         .restaurant-heart {
             position: absolute;
             right: 24.63px;
