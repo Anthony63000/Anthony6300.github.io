@@ -19,11 +19,6 @@
   }
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-}
-
 .title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -87,6 +82,18 @@
 .footer-text--large {
   font-weight: 500;
   text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link-white {
+  color: white;
+}
+
+.scroll-link {
+  scroll-behavior: smooth;
 }
 
 .menu-restaurant-title {
@@ -316,7 +323,7 @@
   flex-direction: column;
   padding: 22px 0 33px 25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container {
     height: 114px;
     flex-direction: row-reverse;
@@ -327,7 +334,7 @@
 .footer-container .footer-title {
   margin-bottom: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container .footer-title {
     margin: 57px 26.42px 30px 0;
     width: 137px;
@@ -339,10 +346,12 @@
   flex-direction: column;
   gap: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container .footer-content {
     flex-direction: row;
     margin: 64px 16px 30px 7px;
+    height: 20px;
+    width: 661px;
   }
 }
 .footer-container .footer-content-span {
@@ -350,17 +359,26 @@
   flex-direction: column;
   gap: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container .footer-content-span {
     flex-direction: row;
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 .footer-container span {
   color: white;
+  width: 190px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container span i {
     margin-right: 5px;
+  }
+}
+@media (min-width: 900px) {
+  .footer-container .footer-text {
+    width: 130px;
   }
 }
 .footer-container .footer-text--large {
@@ -368,7 +386,7 @@
   left: 47px;
   width: 168px;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .footer-container .footer-text--large {
     left: 0;
     position: static;
@@ -521,8 +539,25 @@
 .restaurant-menu {
   height: 1341px;
 }
+@media (min-width: 768px) {
+  .restaurant-menu {
+    height: 1483px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .restaurant-menu-other {
   height: 1421px;
+}
+@media (min-width: 768px) {
+  .restaurant-menu-other {
+    height: 1565px;
+  }
+}
+.restaurant-menu-image {
+  width: 100%;
+  height: 383px;
+  overflow: hidden;
 }
 .restaurant-menu img {
   height: 275px;
@@ -530,7 +565,17 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.restaurant-menu .menu {
+@media (min-width: 768px) {
+  .restaurant-menu img {
+    height: 956.14px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    top: -330.48px;
+  }
+}
+
+.menu {
   position: absolute;
   width: 100%;
   height: auto;
@@ -540,14 +585,32 @@
   border-radius: 40px 40px 0 0;
   padding: 32px 13px 0 13px;
 }
-.restaurant-menu .menu .menu-title {
+@media (min-width: 768px) {
+  .menu {
+    top: 439px;
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 51px;
+  }
+}
+.menu .menu-title {
   display: flex;
   justify-content: space-between;
   height: 27px;
   margin-left: 4px;
   margin-bottom: 42px;
 }
-.restaurant-menu .menu .menu-title .restaurant-heart {
+@media (min-width: 768px) {
+  .menu .menu-title {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: 0;
+  }
+}
+.menu .menu-title .restaurant-heart {
   display: flex;
   align-items: center;
   position: absolute;
@@ -555,26 +618,37 @@
   top: 40px;
   height: 21px;
 }
-.restaurant-menu .menu .menu-items-title {
+@media (min-width: 768px) {
+  .menu .menu-title .restaurant-heart {
+    position: inherit;
+  }
+}
+@media (min-width: 768px) {
+  .menu .menu-items {
+    max-width: 634px;
+    width: 100%;
+  }
+}
+.menu .menu-items-title {
   height: 27px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
 }
-.restaurant-menu .menu .menu-items-title::before {
+.menu .menu-items-title::before {
   content: "";
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
 }
-.restaurant-menu .menu-cards-container {
+.menu-cards-container {
   margin-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 40px;
 }
-.restaurant-menu .menu-button {
+.menu-button {
   display: flex;
   align-items: center;
   justify-content: center;

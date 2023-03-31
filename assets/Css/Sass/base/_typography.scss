@@ -69,6 +69,19 @@ $font-shrikhand:'Shrikhand', cursive;
     }
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+
+    &-white {
+        color: white;
+    }
+}
+
+.scroll-link {
+    scroll-behavior: smooth;
+}
+
 .menu-restaurant-title {
     font-family: $font-shrikhand;
     font-size: 28px;
