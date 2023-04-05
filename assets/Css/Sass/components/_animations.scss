@@ -47,6 +47,8 @@
 
 .menu-cards {
 
+    cursor: pointer;
+
         &:hover { 
             .menu-cards-right {
                 width: 101px;
@@ -87,6 +89,7 @@
 }
 
 .restaurant-heart {
+
     cursor: pointer;
 
     &:hover {

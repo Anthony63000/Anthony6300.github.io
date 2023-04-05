@@ -186,6 +186,9 @@
   animation-delay: 1.5s;
 }
 
+.menu-cards {
+  cursor: pointer;
+}
 .menu-cards:hover .menu-cards-right {
   width: 101px;
 }
