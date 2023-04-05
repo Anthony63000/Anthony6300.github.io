@@ -1,0 +1,51 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #fff, $alpha: 0.7);
+    animation: close-loader 2s linear forwards;
+
+    &-animation {
+    width: 75px;
+    height: 75px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-right-color: $color-primary;
+    border-bottom-color: transparent;
+    border-left-color: $color-secondary;
+    animation: rotate 1s linear infinite;
+    }  
+}
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes close-loader {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+  }
+  
+  
+  
+  
+  
+  

@@ -64,9 +64,10 @@
             height: 27px;
             margin-left: 4px;
             margin-bottom: 42px;
-
+            
             @include large {
-                justify-content: center;
+                justify-content: start;
+                position: relative;
                 align-items: center;
                 gap: 24px;
                 margin-left: 0;
@@ -80,8 +81,15 @@
                 top: 40px;
                 height: 21px;
 
+                &-full {
+                    opacity: 0;
+                    z-index: 1;
+                }
+
                 @include large {
-                    position: inherit;
+                    position: absolute;
+                    top: 2.5px;
+                    right: -48px;
                 }
 
             }

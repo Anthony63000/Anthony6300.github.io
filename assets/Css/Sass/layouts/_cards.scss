@@ -74,6 +74,7 @@
     }
 
     .restaurant-new {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         width: 80px;
         height: 29px;
         border-radius: 2px;
@@ -92,15 +93,33 @@
         position: relative;
         border-radius: 0 0 15px 15px;
         padding: 16px 0 12px 12.81px;
+        z-index: 2;
 
         .restaurant-content-title {
             margin-bottom: 5px;
         }
         
-        .restaurant-heart {
+        .restaurant-content-heart {
+            width: 22px;
+            height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
-            right: 24.63px;
-            top: 23px;
+            right: 25px;
+
+            .restaurant-cards-heart {
+                position: absolute;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                &-full {
+                    z-index: 1;
+                    opacity: 0;
+                }
+            }
+            
         }
     }
 }
@@ -110,7 +129,7 @@
 .menu-cards {
     display: flex;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding-left: 15px;
     border-radius: 15px;
     background: white;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
@@ -120,12 +139,43 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        margin: 12px 0 12px 0;
+        overflow: hidden;
+        width: 90.22%;
+
+    }
+
+    &-description, &-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        align-self: stretch;
     }
 
     &-right {
         display: flex;
         align-items: flex-end;
-        margin-bottom: 1.5px;
+    }
+
+    &-price {
+        margin: 0 0px 13.5px 0;
+    }
+
+    &-selector {
+        border-radius: 0 15px 15px 0;
+        width: 59px;
+        height: 69px;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-new-text;
+        display: flex;
+    
+        .check-icon {
+            color: white;
+        }
     }
 
 }
+
+
+

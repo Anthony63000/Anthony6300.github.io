@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="assets/Css/main.css">
 </head>
 <body>
-   
+    <div class="loader">
+        <div class="loader-animation"></div>
+    </div>
     <div class="main-container">
         <header>
             <div class="header-container">
@@ -30,7 +32,10 @@
             <section class="discovery-container">
                 <h3 class="discovery-title title title-desktop">Réservez le menu qui vous convient</h3>
                 <p class="discovery-text">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-                <button class="btn-rounded discovery-explore"><a href="#restaurant" class="scroll-link link link-white">Explorer nos restaurant</a></button>
+                <button class="btn-rounded discovery-explore">
+                    <a href="#restaurant" class="scroll-link link link-white">Explorer nos restaurant</a>
+                    <div class="btn-rounded-animation"></div>
+                </button>
             </section>
             <section class="functioning">
                 <div class="functioning-container">
@@ -72,8 +77,9 @@
                                     <div class="restaurant-card-content">
                                         <h4 class="restaurant-content-title">La palette du goût</h4>
                                         <p class="restaurant-card-text">Ménilmontant</p>
-                                        <div class="restaurant-heart">
-                                            <i class="far fa-heart fa-lg"></i>
+                                        <div class="restaurant-content-heart">
+                                            <i class="fa-regular fa-heart fa-lg restaurant-cards-heart"></i>
+                                            <i class="fa-solid fa-heart fa-lg restaurant-cards-heart restaurant-cards-heart-full"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -87,8 +93,9 @@
                                     <div class="restaurant-card-content">
                                         <h4 class="restaurant-content-title">La note enchantée</h4>
                                         <p class="restaurant-card-text">Charonne</p>
-                                        <div class="restaurant-heart">
-                                            <i class="far fa-heart fa-lg"></i>
+                                        <div class="restaurant-content-heart">
+                                            <i class="fa-regular fa-heart fa-lg restaurant-cards-heart"></i>
+                                            <i class="fa-solid fa-heart fa-lg restaurant-cards-heart restaurant-cards-heart-full"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -99,8 +106,9 @@
                                     <div class="restaurant-card-content">
                                         <h4 class="restaurant-content-title">À la française</h4>
                                         <p class="restaurant-card-text">Cité Rouge</p>
-                                        <div class="restaurant-heart">
-                                            <i class="far fa-heart fa-lg"></i>
+                                        <div class="restaurant-content-heart">
+                                            <i class="fa-regular fa-heart fa-lg restaurant-cards-heart"></i>
+                                            <i class="fa-solid fa-heart fa-lg restaurant-cards-heart restaurant-cards-heart-full"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -111,9 +119,11 @@
                                     <div class="restaurant-card-content">
                                         <h4 class="restaurant-content-title">Le délice des sens</h4>
                                         <p class="restaurant-card-text">Folie-Méricourt</p>
-                                    <div class="restaurant-heart">
-                                        <i class="far fa-heart fa-lg"></i>
-                                    </div>
+                                        <div class="restaurant-content-heart">
+                                            <i class="fa-regular fa-heart fa-lg restaurant-cards-heart"></i>
+                                            <i class="fa-solid fa-heart fa-lg restaurant-cards-heart restaurant-cards-heart-full"></i>
+                                        </div>
+                                    </div>    
                                 </a>
                             </article>
                         </div>
@@ -136,7 +146,7 @@
                         </span>
                     </div>
                     <a href="#" class="footer-text link link-white">Mentions légales</a>
-                    <a href="#" class="footer-text link link link-white">Contact</a>
+                    <a href="mailto:Ohmyfood@monsite.com" class="footer-text link link link-white">Contact</a>
                 </div>
             </div>
         </footer> 

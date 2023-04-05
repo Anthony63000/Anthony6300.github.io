@@ -1,0 +1,103 @@
+// Annimation 
+
+// bouton rose 
+
+.btn-rounded {
+    transition: opacity 250ms;
+    transition: box-shadow 250ms;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    }
+}
+
+
+// Animation appration menu 
+
+@keyframes menu {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.menu-items {
+    opacity: 0;
+    animation: menu .5s ease-in-out forwards;
+
+    &-1 {
+        animation-delay: .5s;
+    }
+    &-2 {
+        animation-delay: 1s;
+    }
+    &-3 {
+        animation-delay: 1.5s;
+    }
+
+}
+
+//animation selecteur de plats 
+
+
+.menu-cards {
+
+        &:hover { 
+            .menu-cards-right {
+                width: 101px;
+            }
+            .menu-cards-selector {
+                transform: scaleX(1);
+                margin-left: 15px;
+            }
+    }
+    .menu-cards-selector {
+        transform: scaleX(0);
+        transform-origin: center right;
+        margin: 0;
+        transition: all .250s ease-out;
+    }
+   
+    .menu-cards-right {
+        width: 42px;
+        transition: width .250s ease-out;
+    }
+
+}
+
+// Animation coeur 
+
+@keyframes heart {
+    from {
+        opacity: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to {
+        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+    }
+}
+
+.restaurant-heart {
+    cursor: pointer;
+
+    &:hover {
+        animation: heart 0.5s ease-in-out forwards;
+    }
+}
+
+// homepage coeur annimation 
+
+.restaurant-cards-heart:hover {
+    animation: heart 0.5s ease-in-out forwards;
+}
+
+// Loader 
