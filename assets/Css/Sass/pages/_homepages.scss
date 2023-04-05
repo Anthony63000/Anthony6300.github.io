@@ -50,6 +50,9 @@
     .discovery-explore {
         width: 218px;
         margin-top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include large {
             margin: 0;
