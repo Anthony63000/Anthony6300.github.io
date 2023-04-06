@@ -3,8 +3,8 @@
 // bouton rose 
 
 .btn-rounded {
-    transition: opacity 250ms;
-    transition: box-shadow 250ms;
+    transition: opacity 300ms ease-out;
+    transition: box-shadow 300ms ease-out;
 
     &:hover {
         opacity: 0.8;
@@ -74,28 +74,24 @@
 
 // Animation coeur 
 
-@keyframes heart {
-    from {
-        opacity: 0;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    to {
-        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 1;
-    }
-}
-
-.restaurant-heart {
+#restaurant-heart-full {
 
     cursor: pointer;
 
     &:hover {
-        animation: heart 0.5s ease-in-out forwards;
+        opacity: 1;
+        background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+
+    transition: all 250ms;
+    opacity: 0;
+    background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
+
 
 // homepage coeur annimation 
 
