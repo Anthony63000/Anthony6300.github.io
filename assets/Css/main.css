@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
   width: 100%;
   max-width: 375px;
@@ -15,7 +20,7 @@
 }
 @media (min-width: 768px) {
   .main-container {
-    max-width: 2000px;
+    max-width: 3000px;
   }
 }
 
@@ -223,7 +228,7 @@
   transition: width 0.25s ease-out;
 }
 
-#restaurant-heart-full {
+.restaurant-heart-full {
   cursor: pointer;
   transition: all 250ms;
   opacity: 0;
@@ -232,7 +237,7 @@
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#restaurant-heart-full:hover {
+.restaurant-heart-full:hover {
   opacity: 1;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
