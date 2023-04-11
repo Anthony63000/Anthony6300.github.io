@@ -130,6 +130,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            & a {
+                position: absolute;
+                z-index: 2;
+                transform: matrix(1, 0, 0, -1, 0, -1);
+            }
         }
     }
 

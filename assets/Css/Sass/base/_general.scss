@@ -11,13 +11,13 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 375px;
+    max-width: $breakpoint-small;
 
     @include medium {
-        max-width: 768px;
+        max-width: $breakpoint-medium;
     }
 
     @include large {
-        max-width: 1400px;
+        max-width: $max-width;
     }
 }
