@@ -651,6 +651,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  max-width: 512px;
 }
 @media (min-width: 915px) {
   .functioning .functioning-container {
@@ -691,6 +692,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 499px;
 }
 @media (min-width: 915px) {
   .restaurant .restaurant-container {
