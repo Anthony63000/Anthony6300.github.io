@@ -124,6 +124,7 @@
     animation: close-loader 2s linear forwards;
 
     &-animation {
-        animation: rotate 1s linear infinite;
+        animation: rotate 1s linear;
+        animation-iteration-count: 2;
     }
 }
